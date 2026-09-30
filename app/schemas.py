@@ -1,5 +1,6 @@
 from pydantic import BaseModel
 
+
 class SimulationConfig(BaseModel):
     num_particles: int = 150
     width: float = 800.0

@@ -1,9 +1,11 @@
 import asyncio
 import json
+
 from fastapi import APIRouter, HTTPException, WebSocket, WebSocketDisconnect
+
 from app.services.satellite_service import (
+    get_satellite_constellation_positions,
     initialize_satellites,
-    get_satellite_constellation_positions
 )
 
 router = APIRouter(tags=["Satellites"])

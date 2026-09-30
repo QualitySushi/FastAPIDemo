@@ -1,6 +1,8 @@
 import asyncio
 import json
+
 from fastapi import APIRouter, WebSocket, WebSocketDisconnect
+
 from app.schemas import SimulationConfig
 from app.services.boids_engine import BoidsEngine
 

@@ -1,6 +1,9 @@
 from typing import Any
+
 import numpy as np
+
 from app.schemas import SimulationConfig
+
 
 class BoidsEngine:
     def __init__(self, config: SimulationConfig):
