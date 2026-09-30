@@ -20,7 +20,7 @@ class MaritimeVoronoiEngine:
         self.fallback_velocities = np.stack([speeds * np.cos(angles), speeds * np.sin(angles)], axis=-1)
         
         # Start background listener task for live data feed
-        asyncio.create_task(self.connect_live_ais_stream())
+        # asyncio.create_task(self.connect_live_ais_stream())
 
     async def connect_live_ais_stream(self):
         uri = "wss://stream.aisstream.io/v0/stream"
